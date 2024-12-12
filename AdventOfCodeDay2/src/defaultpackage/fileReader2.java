@@ -61,11 +61,10 @@ public class fileReader2 {
             
             int k = 0;
             for (int j = 0; j < list.length; j++) {
-                if (j == i) {
-                    continue;
+                if (j != i) {
+                	listRemoveOneTerm[k] = list[j];
+                    k++;
                 }
-                listRemoveOneTerm[k] = list[j];
-                k++;
             }
 
 
